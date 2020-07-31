@@ -19,22 +19,17 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
  
 if __name__ == '__main__':
-
     obj = __import__('pprint')
-
     __import__('pprint').pprint('hello world')
-
     list = [1,2]
     __import__('pprint').pprint(list[0])
-
     if True:
         __import__('pprint').pprint('this is true')
     else:
         __import__('pprint').pprint('this is flase')
-
     obj.pprint('this is obj')
-    
     number = 1
     number1 = 2
     obj.pprint(number+number1)
+
 
