@@ -23,3 +23,8 @@ print(var3)
 
 
 
+if True:
+    print "hello world"
+else:
+    print "hello python"
+        
