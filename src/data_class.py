@@ -19,4 +19,4 @@ print var2
 var3 = {1,"hello world"}
 print var3
 
-
+print var1[0]+var2[0]+list(var3)[0]
