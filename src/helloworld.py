@@ -8,13 +8,13 @@
 # @author zhangxiaomin(1396729865@qq.com)
 # 
 ######################################################################
-# 导入
+# import
 import sys 
  
 # 
 reload(sys)
 
-# 设置默认编码
+# set default encoding 
 sys.setdefaultencoding('utf-8')
  
 if __name__ == '__main__':
