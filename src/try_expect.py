@@ -9,9 +9,15 @@
 # 
 ######################################################################
  
+import sys 
+ 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+ 
+if __name__ == '__main__':
+    try:
+        file = open('1.txt','w')
+        file.write("hello world")
+    except Exception as e:
+        raise e
 
-
-def add(x,y):
-    return x + y
-
-print add(1,2)
