@@ -30,5 +30,9 @@ if __name__ == '__main__':
     number = 1
     number1 = 2
     obj.pprint(number+number1)
-
+    print 'hello world'
+    print 'hello world'
+    list1 = [1,2,3,4,4]
+    for item in list1:
+        print item
 
