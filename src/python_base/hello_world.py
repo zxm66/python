@@ -18,21 +18,13 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
  
 if __name__ == '__main__':
-    obj = __import__('pprint')
-    __import__('pprint').pprint('hello world')
-    list = [1,2]
-    __import__('pprint').pprint(list[0])
-    if True:
-        __import__('pprint').pprint('this is true')
-    else:
-        __import__('pprint').pprint('this is flase')
-    obj.pprint('this is obj')
-    number = 1
-    number1 = 2
-    obj.pprint(number+number1)
-    print 'hello world'
-    print 'hello world'
-    list1 = [1,2,3,4,4]
-    for item in list1:
-        print item
+    
+    str1 = 'hello world'
+    ch1 = 'c'
+    number1 = 1
+    number2 = 5555555
+    number3 = 3.2
+    number4 = 3.408000
+    print type(str1),type(ch1),type(number1),type(number2),type(number3),type(number4)
+
 
