@@ -25,6 +25,7 @@ if __name__ == '__main__':
     number2 = 5555555
     number3 = 3.2
     number4 = 3.408000
+    print ("hello world")
     print type(str1),type(ch1),type(number1),type(number2),type(number3),type(number4)
 
 
