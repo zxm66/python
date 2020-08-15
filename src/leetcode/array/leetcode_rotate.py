@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     matrix = [[1,2,3],[1,2,3],[1,2,3]]
     Solution().rotate(matrix)
-    print matrix
-    print matrix[1][1]
+    print (matrix)
+    print (matrix[1][1])
 
 
