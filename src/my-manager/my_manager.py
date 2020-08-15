@@ -28,13 +28,13 @@ if __name__ == "__main__":
             print type(result)
             location = result.get("result").get("location")
             if location == None:
-                url = 'http://api.map.baidu.com/geocoding/v3/?output=json&sn=071c4d942b201cf46aedf59033074c81&callback=showLocation&ak=3Ih4sYMVYhmI6xUmLFc2ROGTs28yN5DK&address='+item[2] 
-                r = requests.get(url)
-                result = json.dumps(str(r.text).replace("showLocation&&showLocation(","").replace(")",""))
-                result = json.loads(result).encode("utf-8")
-                result = json.loads(result)
-                location = result.get("result").get("location")
-                lat ,lng = location.get('lat') , location.get('lng')
+                #url = 'http://api.map.baidu.com/geocoding/v3/?output=json&sn=071c4d942b201cf46aedf59033074c81&callback=showLocation&ak=3Ih4sYMVYhmI6xUmLFc2ROGTs28yN5DK&address='+item[2] 
+                #r = requests.get(url)
+                #result = json.dumps(str(r.text).replace("showLocation&&showLocation(","").replace(")",""))
+                #result = json.loads(result).encode("utf-8")
+                #result = json.loads(result)
+                #location = result.get("result").get("location")
+                #lat ,lng = location.get('lat') , location.get('lng')
             # result = json.dumps(result)
             
             print location
