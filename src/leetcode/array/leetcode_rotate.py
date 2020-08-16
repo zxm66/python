@@ -16,7 +16,6 @@ class Solution(object):
                 matrix[i][size -1 -j] = tmp
 
 if __name__ == "__main__":
-
     matrix = [[1,2,3],[1,2,3],[1,2,3]]
     Solution().rotate(matrix)
     print (matrix)
