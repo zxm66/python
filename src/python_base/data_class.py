@@ -11,27 +11,20 @@
  
 
 # python langrage don't care the type of data
-
+# 这个备注是有问题的，任何类型的langrage都必须关系数据类型
 var1 = (1,"hello world")
-print var1
 
 var2 = [1,"hello world"]
-print var2
 
 var3 = {1,"hello world"}
-print var3
 
-print var1[0]+var2[0]+list(var3)[0]
 
 if var1[0] == var2[0]:
-    print "var1[0] is equals var2[0]"
+    pass
 else:
-    print "var1[0] is not equals var2[0]"
-
+    pass
 for item in var2:
-    print item
-
+    pass
 number = 0
 while number < 9 :
-    print number
     number = number + 1

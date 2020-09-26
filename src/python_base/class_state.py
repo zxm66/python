@@ -4,7 +4,7 @@
 class Student:
 
     def __init__(self):
-        print "this is the function of init"
+        __import__('pprint').pprint("this is the function of init")
         pass
     def __sayHello__(self):
         return "hello"
@@ -22,11 +22,11 @@ class Teacher:
         return "name:"+self.name +",age:"+str(self.age)
 
 s = Student()
-print s.__sayHello__()
-print s.__class__
+__import__('pprint').pprint(s.__class__)
+__import__('pprint').pprint(s.__sayHello__())
 
 t = Teacher()
 t.name = "zhangxiaomin"
 t.age = 18
-print t.__toString__()
 
+__import__('pprint').pprint(t.__toString__())

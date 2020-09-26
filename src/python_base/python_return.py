@@ -45,6 +45,43 @@ say_hello("jack",24)
 
 say_hello(age=12,name="zhangsan")
 
+# 可变参数的使用
+
+def add_many(nums):
+    x = 0;
+    for item in nums:
+        x+=item
+    
+    return x
+
+nums = [1,2,3,4,5,6]
+
+# 列表
+print("this sum is {}".format(add_many(nums)))
+
+
+
+# *args 是个可变参数,多出来的参数会已元祖的方式保存到args
+# 本质上应该是一个元祖。使用了*号。
+def add(a,b,*args):
+    print("this a is {},this b is {}".format(a,b))
+    print("this args is {}".format(args))
+    c = a + b;
+    for arg in args:
+        c += arg
+    return c
+
+
+print("this sum is {} ".format(add(1,2,3)))
+
+
+# 除了使用def 还可以使用lambda
+
+mul = lambda a,b:a*b #匿名函数 只用一次。
+
+print("this mul is {}".format(mul(1,2)))
+
+# 把函数当作参数去传递
 
 
 

@@ -2,9 +2,8 @@
 # -*- coding:UTF-8 -*-
 
 for letter in "python":
-    print letter
-
+    __import__('pprint').pprint("this letter is {}".format(letter))
 var1 = {"name":"zhangxiaomin","age":18}
 
 for key in var1.keys():
-    print key,var1[key]
+    __import__('pprint').pprint("this key is {}".format(key))

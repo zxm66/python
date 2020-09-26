@@ -11,12 +11,9 @@
 # import
 import sys 
  
-# 
-reload(sys)
-
-# set default encoding 
-sys.setdefaultencoding('utf-8')
  
+__import__('pprint').pprint("this is hello world")
+# 不写mian和写上main方法的区别在于其他模块倒入程序的时候，要执行这段代码
 if __name__ == '__main__':
     
     str1 = 'hello world'
@@ -26,6 +23,5 @@ if __name__ == '__main__':
     number3 = 3.2
     number4 = 3.408000
     print ("hello world")
-    print type(str1),type(ch1),type(number1),type(number2),type(number3),type(number4)
 
-
+    pass
