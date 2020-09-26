@@ -2,4 +2,4 @@
 # -*- coding:utf-8 -*-
 
 def support_print(obj):
-    print obj
+    __import__('pprint').pprint("this is support_print method")

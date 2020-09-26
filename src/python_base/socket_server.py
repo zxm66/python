@@ -10,6 +10,5 @@ s.bind((hostname,port))
 s.listen(5)
 while True:
     c,addr = s.accept()
-    print addr
     c.send("hello world")
     c.close()

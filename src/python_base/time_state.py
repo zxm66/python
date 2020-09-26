@@ -10,5 +10,9 @@
 ######################################################################
  
 import time
+from pprint import pprint
 
-print "the current timestamp is ", time.time()
+
+if __name__ == "__main__":
+    pprint("this current time is {}".format(time.time()))
+    pass

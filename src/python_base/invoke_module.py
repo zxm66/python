@@ -12,8 +12,7 @@
 
 import support_module
 
-support_module.support_print("hello world")
 
 if __name__ == "__main__":
-    print 'hello world'
+    support_module.support_print("hello world")
     pass
