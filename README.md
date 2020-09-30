@@ -1,4 +1,14 @@
-让我觉得牛逼的人，应该是怎么样写代码的呢？我想说的是使用最简单的工具，就可以了，
-就像用joe这个编辑器写c的那个程序员就是很厉害的程序员，我觉得那样就是很就比，可以通过命令行完成很多任务就是那样的一个人。
 
-而不是通过很多工具完成的。
+pip install <package-name>
+
+pip uninstall <package-name>
+
+pip list
+
+pip freeze
+
+pip install <package-name> -i <url>
+
+pip freeze > file_name
+
+pip install -r file_name

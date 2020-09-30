@@ -18,9 +18,10 @@ if __name__ == '__main__':
     try:
         file = open('1.txt','w')
         file.write("hello world")
-
+        file.close()
         file = open('1.txt','r')
         current = file.readline();
+        file.close()
         pprint("this current is {}".format(current))
     except Exception as e:
         raise e

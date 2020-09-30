@@ -8,8 +8,6 @@
 # @author zhangxiaomin(1396729865@qq.com)
 # 
 ######################################################################
-# import
-import sys 
  
  
 __import__('pprint').pprint("this is hello world")
