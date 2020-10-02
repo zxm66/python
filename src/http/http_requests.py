@@ -14,8 +14,6 @@ import sys
 import requests
 #导入json包
 import json
-reload(sys)
-sys.setdefaultencoding('utf-8')
  
 if __name__ == '__main__':
     #设置要访问的地址（这里是get请求）

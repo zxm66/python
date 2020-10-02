@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*- 
  
 ######################################################################
@@ -21,5 +21,7 @@ if __name__ == '__main__':
     number3 = 3.2
     number4 = 3.408000
     print ("hello world")
+    print(id(str1))
+    print(hex(id(str1)))
 
     pass
