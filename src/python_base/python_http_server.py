@@ -14,8 +14,23 @@ if __name__ == "__main__":
         client_socket ,client_addr = server_socket.accept()
         print(client_addr)
         data = client_socket.recv(1024).decode('utf8')
-        client_socket.send(client_addr[0].encode('utf8'))
-        print(data)
+        if data:
+            path = data.splitlines()[0].split(' ')[1]
+            print("the path is {}".format(path))
+            response_header = ''
+            response_body= ''
+            if path == '/':
+                response_body= 'welcome my web'
+            if path == '/login':
+                response_body= 'welcome login page'
+            if path == '/register':
+                response_body= 'welcone register'
+            response = response_header+response_body
+            client_socket.send(response.encode('utf8'))
+            print(data)
+            pass
+        else :
+            pass
         if 1 == 2:
             break
         pass
