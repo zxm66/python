@@ -2,6 +2,7 @@
 import socket
 import threading
 
+# 使用多线程编程。
 
 def client():
     s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
