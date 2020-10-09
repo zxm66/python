@@ -6,13 +6,8 @@
 ######################################################################
  
  
- 
 if __name__ == '__main__':
-    print("this is hello world progress")
-
-    print("this is not saved and test the %")
+    
     pass
-
-
 
 
