@@ -9,8 +9,6 @@
  
 import sys 
 import pymysql
-reload(sys)
-sys.setdefaultencoding('utf-8')
  
 if __name__ == "__main__":
     conn = pymysql.connect(host='127.0.0.1', user = "root", passwd="root", db="smp_produce", port=3306, charset="utf8")
@@ -28,7 +26,7 @@ if __name__ == "__main__":
     cur.execute("select * from tb_user")
     users = cur.fetchall();
 
-    for i in range(len(users)):
+    for i in range(users.__len__):
         print(users[i]);
     pass
     cur.close()

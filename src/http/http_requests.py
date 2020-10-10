@@ -17,13 +17,11 @@ import json
  
 if __name__ == '__main__':
     #设置要访问的地址（这里是get请求）
-    url = 'http://api.map.baidu.com/geocoding/v3/?address=保定市定兴县开放路&output=json&sn=071c4d942b201cf46aedf59033074c81&callback=showLocation&ak=3Ih4sYMVYhmI6xUmLFc2ROGTs28yN5DK'
+    url = 'http://api.map.baidu.com/geocoding/v3/?address=保定市定兴县开放路&output=json&sn=071c4d942b201cf46aedf59033074c81&ak=3Ih4sYMVYhmI6xUmLFc2ROGTs28yN5DK'
     #直接请求
     r = requests.get(url)
-    #这里是输出了一个字符串
-    print(r.text)
 
     #用自带的json工具把字符串转成字典
-    dictinfo = json.loads(r.text)
+    dictinfo = json.dumps(r.text)
     #输出字典
     print(dictinfo)
