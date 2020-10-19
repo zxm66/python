@@ -41,8 +41,17 @@ def test2():
     plt.ylabel('population')
     plt.show()
     pass
+
+def test3():
+    data = ps.read_csv('~/Downloads/countries.csv')
+    algeria = data[data.country == 'Algeria']
+    plt.plot(algeria.year,algeria.population)
+    plt.show()
+
+
+    pass
 if __name__ == '__main__':
-    test2()
+    test3()
     pass
 
 

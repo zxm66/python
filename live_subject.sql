@@ -1,6 +1,3 @@
-
-
-
 create table information(
 	info_id varchar2(64), -- 
 	info_title varchar2(64),
